@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/6e2cd958b0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <p class="msgContainer active">
+    </p>
+    <h1>Ajouter un livre</h1>
+    <form>
+        <label for="titre">Titre</label>
+        <input type="text" name="titre" id="titre">
+        <label for="auteur">Auteur</label>
+        <input type="text" name="auteur" id="auteur">
+        <label for="annee">Année</label>
+        <input type="text" name="annee" id="annee">
+        <button type="submit">Envoyez</button>
+    </form>
+    <hr>
+    <table>
+        <thead>
+            <tr>
+                <th>Titre</td>
+                <th>Auteur</td>
+                <th>Année</td>
+                <th>&cross;</td>
+            </tr>
+        </thead>
+        <tbody class="bookList">
+
+        </tbody>
+    </table>
+
+    <script src="script/app.js"></script>
+</body>
+
+</html>

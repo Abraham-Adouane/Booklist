@@ -1,0 +1,86 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --gap: 14px
+}
+
+
+body {
+    --height: 30px;
+    padding-top: var(--height);
+    text-align: center;
+}
+
+
+form {
+    width: 744px;
+    display: grid;
+    margin: auto;
+    gap: var(--gap);
+}
+
+label {
+    margin-top: calc(43px - var(--gap));
+}
+
+input {
+    /* width: 73px; */
+    height: 59px;
+    border: 1px solid #767676;
+}
+
+button {
+    width: 174px;
+    height: 66px;
+    margin: calc(50px - var(--gap)) auto 8px;
+    border-radius: 15px;
+    background-color: #040466;
+    color: #fff;
+}
+
+table {
+    width: 100%;
+}
+
+
+
+
+.deleteBtn {
+
+    font-size: 30px;
+    color: #f44336;
+    transition: 300ms ease-in-out;
+    transition-property: scale, transform;
+    cursor: pointer;
+
+}
+
+.deleteBtn:hover {
+    color: #c2170a;
+    transform: scale(1.1);
+}
+
+.msgContainer {
+    visibility: none;
+    position: absolute;
+    top: calc(var(--height)*-1);
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: var(--height);
+    line-height: var(--height);
+    color: white;
+    transition: transform 200ms ease-in-out;
+}
+
+.msgContainer.active {
+    visibility: visible;
+    transform: translateY(var(--height));
+    transition: transform 200ms ease-in-out;
+}
